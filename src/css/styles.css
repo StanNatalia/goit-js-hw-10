@@ -10,3 +10,4 @@
 @import url('./2-snackbar.css');
 @import flatpickr from "flatpickr";
 @import "flatpickr/dist/flatpickr.min.css";
+@import 'normalize.css';

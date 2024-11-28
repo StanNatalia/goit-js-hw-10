@@ -4,6 +4,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+
 let userSelectedDate;
 
 
@@ -32,13 +33,13 @@ const options = {
 
          if (userSelectedDate <= currentDate) {
             iziToast.show({
-                title: '',
-                iconUrl: '',
+                title: 'Error',
+                icon: '<img src="../img/error.svg" style="width: 24px; height: 24px;">',
                 backgroundColor: "red",
                 messageColor: "white",
                 message: "Please choose a date in the future",
                 position: 'topRight',
-                timeout: 1000,
+                timeout: 10000,
             });
             startButton.disabled = true;
          } else {
