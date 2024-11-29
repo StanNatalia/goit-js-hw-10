@@ -29,7 +29,7 @@ form.addEventListener('submit', (event) => {
                 position: 'topRight',
                 title: 'OK',
                 titleColor: 'white',
-                icon: '<img src="../img/sprite-icons.svg#icon-ok" style="width: 24px; height: 24px;">',
+                icon: '<span class="my-icon"></span>',
                 backgroundColor: "green",
                 messageColor: "white",
                 timeout: 10000

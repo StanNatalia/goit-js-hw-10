@@ -1,5 +1,5 @@
 body {
-    font: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -76,8 +76,8 @@ button:hover {
     gap: 24px;
     flex-basis: calc((100%-3*24)/4);
     background-color: white;
-
 }
+
 
 .field {
     text-align: center;
@@ -102,7 +102,19 @@ color: #2e2f42;
 .iziToast {
     width: 302px;
     height: 64px; 
+    border-bottom: 2px solid #ffbebe;
+    border-radius: 4px;
+    padding: 20px;
+
 }
+
+.iziToast-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .iziToast .iziToast-title {
 font-weight: 700;
@@ -118,4 +130,17 @@ font-size: 16px;
 line-height: 150%;
 letter-spacing: 0.03em;
 color: #fff;
+}
+
+.iziToast-close {
+    color: white; 
+    font-size: 18px; 
+}
+
+.my-icon {
+    background-image: url('../img/sprite-icons#icon-error');
+    background-position: -10px -20px; 
+    width: 24px; 
+    height: 24px; 
+    display: inline-block; 
 }

@@ -35,13 +35,14 @@ const options = {
             iziToast.show({
                 title: 'Error',
                 titleColor: 'white',
+                close: false,
                 color: 'white',
-                icon: '<img src="../img/sprite-icons#icon-error" style="width: 24px; height: 24px;">',
+                icon: '<svg class="icon"><use xlink:href="../img/sprite-icons.svg#icon-error"></use></svg>',
                 backgroundColor: "red",
                 messageColor: "white",
                 message: "Please choose a date in the future",
                 position: 'topRight',
-                timeout: 10000
+                timeout: 1000000
             });
             startButton.disabled = true;
          } else {
