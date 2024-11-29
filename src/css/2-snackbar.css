@@ -1,0 +1,26 @@
+.iziToast .iziToast-close {
+    color: white;
+}
+
+
+.iziToast {
+    width: 302px;
+    height: 64px; 
+}
+
+.iziToast .iziToast-title {
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+color: #fff;
+}
+
+.iziToast .iziToast-message {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+color: #fff;
+}
+
