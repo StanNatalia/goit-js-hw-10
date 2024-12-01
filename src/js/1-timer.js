@@ -4,6 +4,8 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+import pathIcon from "../img/icon-error.svg";
+
 
 let userSelectedDate;
 
@@ -35,14 +37,14 @@ const options = {
             iziToast.show({
                 title: 'Error',
                 titleColor: 'white',
-                close: false,
+                close: true,
                 color: 'white',
-                icon: '<svg class="icon"><use xlink:href="../img/sprite-icons.svg#icon-error"></use></svg>',
-                backgroundColor: "red",
+                icon: {pathIcon},
+                backgroundColor: "#ef4040",
                 messageColor: "white",
                 message: "Please choose a date in the future",
                 position: 'topRight',
-                timeout: 1000000
+                timeout: 10000
             });
             startButton.disabled = true;
          } else {
@@ -82,10 +84,22 @@ function startCountdown(targetDate) {
     }, 1000);
 }
 
-  
-  function updateTimerInterface(days, hours, minutes, seconds) {
+
+function updateTimerInterface(days, hours, minutes, seconds) {
     const timerDisplay = document.querySelector(".timer");
-    timerDisplay.textContent = `${days.toString().padStart(2, '0')}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+
+    const daysElement = timerDisplay.querySelector("[data-days]");
+    const hoursElement = timerDisplay.querySelector("[data-hours]");
+    const minutesElement = timerDisplay.querySelector("[data-minutes]");
+    const secondsElement = timerDisplay.querySelector("[data-seconds]");
+
+
+    if (daysElement) daysElement.textContent = days.toString().padStart(2, '0');
+    if (hoursElement) hoursElement.textContent = hours.toString().padStart(2, '0');
+    if (minutesElement) minutesElement.textContent = minutes.toString().padStart(2, '0');
+    if (secondsElement) secondsElement.textContent = seconds.toString().padStart(2, '0');
 }
+  
 
 

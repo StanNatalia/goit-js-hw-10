@@ -1,6 +1,9 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+import pathSuccesIcon from "../img/icon-ok.svg";
+import pathErrorIcon from "../img/icon-error.svg";
+
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (event) => {
@@ -24,13 +27,12 @@ form.addEventListener('submit', (event) => {
     promise
         .then((delay) => {
             iziToast.success({
-                
                 message: `Fulfilled promise in ${delay}ms`,
                 position: 'topRight',
                 title: 'OK',
                 titleColor: 'white',
-                icon: '<span class="my-icon"></span>',
-                backgroundColor: "green",
+                iconURL: pathSuccesIcon,
+                backgroundColor: '#59a10d',
                 messageColor: "white",
                 timeout: 10000
             });
@@ -41,8 +43,8 @@ form.addEventListener('submit', (event) => {
                 titleColor: 'white',
                 message: `Rejected promise in ${delay}ms`,
                 position: 'topRight',
-                icon: '<img src="../img/sprite-icons.svg#icon-error" style="width: 24px; height: 24px;">',
-                backgroundColor: "red",
+                iconUrl: pathErrorIcon,
+                backgroundColor: '#ef4040',
                 messageColor: "white",
                 timeout: 10000
             });

@@ -137,10 +137,4 @@ color: #fff;
     font-size: 18px; 
 }
 
-.my-icon {
-    background-image: url('../img/sprite-icons#icon-error');
-    background-position: -10px -20px; 
-    width: 24px; 
-    height: 24px; 
-    display: inline-block; 
-}
+
