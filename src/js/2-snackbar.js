@@ -22,6 +22,7 @@ form.addEventListener('submit', (event) => {
             }
         }, delay);
     });
+    
 
     
     promise
