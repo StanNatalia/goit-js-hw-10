@@ -108,15 +108,15 @@ button:hover {
     color: white; 
 }
 
-.iziToast .iziToast-close {
+/* .iziToast .iziToast-close {
     color: white;
-}
+} */
 
 
-.iziToast {
+/* .iziToast {
     width: 302px;
     height: 64px; 
-}
+} */
 
 .iziToast .iziToast-title {
 font-weight: 700;
@@ -150,4 +150,12 @@ color: #fff;
     color: white; 
 }
 
+.success-notification {
+    width: 383px;
+    height: 64px;
+}
 
+.error-notification {
+    width: 302px;
+    height: 64px;
+}

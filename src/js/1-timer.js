@@ -46,7 +46,7 @@ const options = {
                 messageColor: "white",
                 message: "Please choose a date in the future",
                 position: 'topRight',
-                timeout: 10000
+                timeout: 1000000
             });
             startButton.disabled = true;
          } else {

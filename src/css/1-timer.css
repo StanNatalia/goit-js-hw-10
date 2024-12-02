@@ -100,21 +100,17 @@ color: #2e2f42;
 }
 
 .iziToast {
-    width: 302px;
-    height: 64px; 
     border-bottom: 2px solid #ffbebe;
     border-radius: 4px;
     padding: 20px;
-
-}
-
-.iziToast-wrapper {
+    width: 302px;
+    height: 64px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
 
+}
 
 .iziToast .iziToast-title {
 font-weight: 700;
@@ -132,13 +128,21 @@ letter-spacing: 0.03em;
 color: #fff;
 }
 
+.iziToast-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .iziToast-close {
     color: white; 
     font-size: 18px; 
-}
+} 
 
 .custom-icon {
     color: white; 
-}
+} 
 
 

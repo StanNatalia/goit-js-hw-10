@@ -33,9 +33,11 @@ form.addEventListener('submit', (event) => {
                 title: 'OK',
                 titleColor: 'white',
                 iconURL: pathSuccesIcon,
+                iconColor: 'white',
                 backgroundColor: '#59a10d',
                 messageColor: "white",
-                timeout: 10000
+                className: 'success-notification',
+                timeout: 1000000
             });
         })
         .catch((delay) => {
@@ -45,9 +47,11 @@ form.addEventListener('submit', (event) => {
                 message: `Rejected promise in ${delay}ms`,
                 position: 'topRight',
                 iconUrl: pathErrorIcon,
+                iconColor: 'white',
                 backgroundColor: '#ef4040',
                 messageColor: "white",
-                timeout: 10000
+                className: 'error-notification',
+                timeout: 1000000
             });
         });
 });
