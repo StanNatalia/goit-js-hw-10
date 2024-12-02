@@ -2,18 +2,11 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #fff;
     padding-left: 36px auto;
-    /* font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em; */
-    
+   
 }
 
 .form {
     max-width: 360px;
-    
-    /* margin: 36px auto; */
-
 }
 
 .delay {
@@ -44,6 +37,14 @@ input:hover {
 
 input:focus {
     border-color: #4E75FF;
+}
+
+.fieldset {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
 }
 
 
@@ -104,19 +105,18 @@ button {
 }
 
 button:hover {
-    background-color: #6c8cff;;
+    background-color: #6c8cff;
     color: white; 
 }
 
-/* .iziToast .iziToast-close {
-    color: white;
-} */
+.iziToast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 
-/* .iziToast {
-    width: 302px;
-    height: 64px; 
-} */
 
 .iziToast .iziToast-title {
 font-weight: 700;
@@ -126,12 +126,12 @@ letter-spacing: 0.03em;
 color: #fff;
 }
 
-.iziToast-wrapper {
+/* .iziToast-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .iziToast .iziToast-message {
 font-weight: 400;
@@ -150,12 +150,25 @@ color: #fff;
     color: white; 
 }
 
-.success-notification {
-    width: 383px;
-    height: 64px;
+.iziToast .iziToast-close {
+    width: 20px; 
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
-.error-notification {
-    width: 302px;
-    height: 64px;
-}
+
+
+/* .iziToast-close {
+    width: 20px; 
+    height: 20px; 
+    font-size: 20px; 
+    line-height: 20px;
+} */
+
+/* .iziToast-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */

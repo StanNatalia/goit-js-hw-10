@@ -31,13 +31,15 @@ form.addEventListener('submit', (event) => {
                 message: `Fulfilled promise in ${delay}ms`,
                 position: 'topRight',
                 title: 'OK',
+                theme: 'dark',
                 titleColor: 'white',
                 iconURL: pathSuccesIcon,
                 iconColor: 'white',
                 backgroundColor: '#59a10d',
                 messageColor: "white",
-                className: 'success-notification',
-                timeout: 1000000
+                timeout: 1000000,
+                width: 383, 
+                height: 64
             });
         })
         .catch((delay) => {
@@ -47,11 +49,14 @@ form.addEventListener('submit', (event) => {
                 message: `Rejected promise in ${delay}ms`,
                 position: 'topRight',
                 iconUrl: pathErrorIcon,
-                iconColor: 'white',
+                theme: 'dark',
                 backgroundColor: '#ef4040',
                 messageColor: "white",
-                className: 'error-notification',
+                width: 302, 
+                height: 64,
                 timeout: 1000000
             });
         });
+        
+    form.reset();
 });
