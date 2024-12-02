@@ -37,9 +37,8 @@ form.addEventListener('submit', (event) => {
                 iconColor: 'white',
                 backgroundColor: '#59a10d',
                 messageColor: "white",
-                timeout: 1000000,
-                width: 383, 
-                height: 64
+                timeout: 10000
+    
             });
         })
         .catch((delay) => {
@@ -52,9 +51,7 @@ form.addEventListener('submit', (event) => {
                 theme: 'dark',
                 backgroundColor: '#ef4040',
                 messageColor: "white",
-                width: 302, 
-                height: 64,
-                timeout: 1000000
+                timeout: 10000
             });
         });
         

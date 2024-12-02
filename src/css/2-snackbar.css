@@ -112,63 +112,18 @@ button:hover {
 .iziToast {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    width: 302px;
+    height: 64px;
 }
 
 
 
-.iziToast .iziToast-title {
-font-weight: 700;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.03em;
-color: #fff;
-}
 
-/* .iziToast-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} */
-
-.iziToast .iziToast-message {
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.03em;
-color: #fff;
-}
-
-.iziToast-close {
-    color: white; 
-    font-size: 18px; 
-}
-
-.custom-icon {
-    color: white; 
-}
-
-.iziToast .iziToast-close {
-    width: 20px; 
-    height: 20px;
-    font-size: 20px;
-    line-height: 20px;
+.iziToast.iziToast-theme-dark .iziToast-close  {
+    background-size: 20px;
 }
 
 
 
-/* .iziToast-close {
-    width: 20px; 
-    height: 20px; 
-    font-size: 20px; 
-    line-height: 20px;
-} */
-
-/* .iziToast-body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} */

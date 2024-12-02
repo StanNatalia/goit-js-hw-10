@@ -38,7 +38,6 @@ const options = {
                 title: 'Error',
                 theme: 'dark',
                 titleColor: 'white',
-                close: true,
                 titleSize: '16px', 
                 titleLineHeight: '150%',            
                 messageSize: '16px', 
